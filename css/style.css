@@ -1,0 +1,159 @@
+:root {
+    --color-primary: #CB4210;
+    --color-primary-hover: #AF390E;
+    --color-text: #111;
+    --color-bg: #F7F7F7;
+}
+
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* HEADER */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 10;
+}
+
+.header__container {
+    max-width: 1300px;
+    margin-inline: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.header__logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.header__logo a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* NAVIGATION */
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.header__nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--color-text);
+}
+
+.header__nav-item a:hover {
+    color: var(--color-primary);
+}
+
+.header__actions {
+    display: flex;
+    gap: 2rem;
+}
+
+/* BUTTONS */
+.btn {
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 0.75rem 2rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.3rem);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn--login {
+    color: var(--color-text);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.btn--login:hover {
+    color: var(--color-primary);
+}
+
+.btn--signup {
+    color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.btn--signup:hover {
+    color: var(--color-primary-hover);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.hero__inner {
+    max-width: 700px;
+    margin-top: 14rem;
+    margin-bottom: 6rem;
+}
+
+.hero__title {
+    font-size: clamp(3.75rem, 5vw, 5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 2.8rem;
+}
+
+.hero_title span {
+    display: block;
+    font-weight: 700;
+}
+
+.hero__image {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.hero__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
