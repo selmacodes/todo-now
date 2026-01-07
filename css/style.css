@@ -38,6 +38,21 @@ body {
     justify-content: space-between;
 }
 
+.header__hamburger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/icons/menu.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.header__hamburger.active {
+    background-image: url(../assets/icons/close.svg);
+}
+
 /* LOGO */
 .header__logo a {
     text-decoration: none;
@@ -69,7 +84,7 @@ body {
     font-weight: 500;
     font-size: 1.125rem;
     color: var(--color-text);
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
 }
 
 .header__nav-item a:hover {
@@ -97,7 +112,7 @@ body {
 
 .header__actions {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
 /* BUTTONS */
@@ -111,7 +126,7 @@ body {
     background-color: var(--color-primary);
     color: var(--color-bg);
     padding: 0.75rem 2rem;
-    font-size: clamp(1.2rem, 1.2vw, 1.3rem);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
 }
 
 .btn--primary:hover {
@@ -120,7 +135,7 @@ body {
 
 .btn--login {
     color: var(--color-text);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.2rem;
 }
 
@@ -157,7 +172,7 @@ body {
 }
 
 .hero__title {
-    font-size: clamp(3.75rem, 5vw, 5rem);
+    font-size: clamp(2.5rem, 5vw, 5rem);
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 2.8rem;
@@ -177,4 +192,72 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+
+@media (max-width: 890px) {
+    .header__nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: var(--color-bg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__nav-list.active {
+        display: flex;
+    }
+
+    .header__hamburger {
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .header__actions {
+        margin-left: auto;
+        gap: 1rem;
+    }
+
+    .hero {
+        height: auto;
+        padding-top: 8rem;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 680px) {
+    .header__logo a {
+        font-size: 1.2rem;
+    }
+
+    .header__nav-item a {
+        font-size: 0.8rem;
+    }
+
+    .header__actions {
+        gap: 0.5rem;
+    }
+
+    .header__left {
+        gap: 1rem;
+    }
+
+    .header__hamburger {
+        margin-left: 1rem;
+    }
+
+    .btn--login,
+    .btn--signup {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .hero {
+        height: auto;
+        padding-top: 0.5rem;
+    }
 }
