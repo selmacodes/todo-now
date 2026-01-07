@@ -20,6 +20,6 @@ En enkel landing page för en todo-tjänst.
 - **Konsistens & BEM** - enhetliga färger, typografi och klasser ger förutsägbar struktur.
 - **Tillgänglighet & läsbarhet** - alt-text på bild och tillräcklig kontrast.
 - **Skalbarhet** - layout och typografi är flexibla med fokus på desktop.
-- **Tydlig handling (CTA)** - knappen "Börja nu" är framträdande och lätta att hitat.
+- **Tydlig handling (CTA)** - knappen "Börja nu" är framträdande och lätt att hitta.
 - **Minimalism** - hero-bild och rubrik kommunicerar syftet utan distraktioner.
 - **Förutsägbarhet** - navigation och knappar på standardplatser för intuitiv användning.
