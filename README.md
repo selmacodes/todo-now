@@ -13,6 +13,7 @@ En enkel landing page för en todo-tjänst.
 - HTML (semantisk markup)
 - CSS (Flexbox, BEM, responsiv typografi med clamp())
 - Google Fonts (Raleway)
+- Responsiv design (hamburgermeny för mindre skärmar)
 
 ## UX-principer
 
@@ -23,3 +24,4 @@ En enkel landing page för en todo-tjänst.
 - **Tydlig handling (CTA)** - knappen "Börja nu" är framträdande och lätt att hitta.
 - **Minimalism** - hero-bild och rubrik kommunicerar syftet utan distraktioner.
 - **Förutsägbarhet** - navigation och knappar på standardplatser för intuitiv användning.
+- **Responsiv navigation** - hamburgermeny med nav-länkar och CTA-knappar på mobil.
