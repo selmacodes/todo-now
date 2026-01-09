@@ -18,7 +18,7 @@ En enkel landing page för en todo-tjänst.
 ## UX-principer
 
 - **Visuell hierarki** - rubrik, CTA-knapp och bild presenteras i tydlig ordning.
-- **Konsistens & BEM** - enhetliga färger, typografi och klasser ger förutsägbar struktur.
+- **Konsistens** - enhetliga färger, typografi och komponenter skapar förutsägbarhet.
 - **Tillgänglighet & läsbarhet** - alt-text på bild och tillräcklig kontrast.
 - **Skalbarhet** - layout och typografi är flexibla med fokus på desktop.
 - **Tydlig handling (CTA)** - knappen "Börja nu" är framträdande och lätt att hitta.
